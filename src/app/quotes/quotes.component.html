@@ -1,3 +1,6 @@
-<p>
-  quotes works!
-</p>
+<ul>
+<div *ngFor='let quote of quotes'>
+<li {{quote.id}},{{quote.name}}></li>
+</div>
+</ul>
+<p *ngIf='quotes.length>6'>Feel inspired Today</p>
