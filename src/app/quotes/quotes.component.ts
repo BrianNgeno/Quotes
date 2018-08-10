@@ -7,9 +7,9 @@ import { Quote } from '../quote';
 })
 export class QuotesComponent implements OnInit {
   quotes = [
-    new Quote(1, 'Start Early finish Early'),
-    new Quote(2, 'The mind is the greatest weapon against poverty'),
-    new Quote(3, 'Never underestimate the power of Confidence'),
+    new Quote(1, 'Start Early finish Early', 'By Martin Luther'),
+    new Quote(2, 'The mind is the greatest weapon against poverty', 'By marvin Gavin'),
+    new Quote(3, 'Never underestimate the power of Confidence', 'By Lincon Martin'),
   ];
 
   constructor() { }
