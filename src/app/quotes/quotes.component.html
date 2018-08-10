@@ -1,10 +1,14 @@
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<div class="container-fluid" id="parent">
+<app-quote-form></app-quote-form>
 <ul>
 <div *ngFor='let quote of quotes; let i=index'>
 <li> {{quote.id}},{{quote.name}}</li>
 
-<button class='btn btn=primary'(click)='toogleDetails(i)'>Show Author and Date</button>
+<button class="btn btn-primary" (click)='toogleDetails(i)'>Show Author and Date</button>
 
 <app-quote-detail  *ngIf="quote.showDescription"  [quote]='quote' (isComplete)= 'completeGoal($event,i)'> </app-quote-detail>
 </div>
 </ul>
 <p *ngIf='quotes.length>6'>Feel inspired Today</p>
+</div>

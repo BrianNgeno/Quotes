@@ -1,0 +1,18 @@
+#form{
+  background-image: url('../../assets/pic.jpg');
+  background-size: 1400px 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  color:white;
+}
+#details{
+  margin-left: 300px;
+  color:white;
+  font-family: 'Abril Fatface', cursive;
+}
+h1{
+  margin-top: 50px;
+  font-family: 'Righteous', cursive;
+}
