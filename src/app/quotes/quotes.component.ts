@@ -12,9 +12,19 @@ export class QuotesComponent implements OnInit {
     new Quote(3, 'Never underestimate the power of Confidence', 'By Lincon Martin', new Date(2018, 5, 19)),
   ];
 
+ toogleDetails(index) {
+        this.quotes[index].showDescription = !this.quotes[index].showDescription;
+        console.log(this.quotes[index].showDescription);
+    }
+
+completeGoal(isComplete, index) {
+            if (isComplete) {
+                this.quotes.splice(index, 1);
+                }
+              }
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }
