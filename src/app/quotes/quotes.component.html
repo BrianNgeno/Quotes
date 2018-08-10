@@ -1,7 +1,8 @@
 <ul>
-<div *ngFor='let quote of quotes'>
-<li> {{quote.id}},{{quote.name}},{{quote.description}},{{quote.date}}</li>
-<app-quote-detail [quote]='quote'> </app-quote-detail>
+<div *ngFor='let quote of quotes: let i=index'>
+<li> {{quote.id}},{{quote.name}},{{quote.description}},{{quote.date|date}}</li>
+<button (click)='toogleDetails(i)'>Show Author and Date</button>
+<app-quote-detail *ngIf="goal.showDescription"[quote]='quote'> </app-quote-detail>
 </div>
 </ul>
 <p *ngIf='quotes.length>6'>Feel inspired Today</p>
