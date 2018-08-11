@@ -8,9 +8,8 @@
 <div *ngFor='let quote of quotes; let i=index'>
 <li>{{quote.name}}</li>
 
-<button class="btn btn-primary" (click)='toogleDetails(i)'>Show Author and Publisher</button>
-<button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>34 </button>
-<button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i>34 </button>
+<button class="btn btn-info" (click)='toogleDetails(i)' id="toogle">Show Author and Publisher</button>
+
 
 <app-quote-detail  *ngIf="quote.showDescription"  [quote]='quote' (isComplete)= 'completeGoal($event,i)'> </app-quote-detail>
 </div>
