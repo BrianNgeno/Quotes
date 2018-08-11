@@ -12,16 +12,22 @@ export class QuotesComponent implements OnInit {
     new Quote('Never underestimate the power of Confidence', 'By Lincon Martin', new Date(2018, 5, 19)),
   ];
 
- toogleDetails(index) {
-        this.quotes[index].showDescription = !this.quotes[index].showDescription;
-        console.log(this.quotes[index].showDescription);
-    }
+  toogleDetails(index) {
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+    console.log(this.quotes[index].showDescription);
+  }
 
-completeGoal(isComplete, index) {
-            if (isComplete) {
-                this.quotes.splice(index, 1);
-                }
-              }
+  completeGoal(isComplete, index) {
+    if (isComplete) {
+      this.quotes.splice(index, 1);
+    }
+  }
+  // addNewGoal(goal) {
+  //   let quoteLength: number = this.quotes.length;
+  //   quote.completeDate = new Date(goal.completeDate)
+  //   this.quotes.push(quote)
+  //
+  // }
 
   constructor() { }
 
