@@ -7,9 +7,9 @@ import { Quote } from '../quote';
 })
 export class QuotesComponent implements OnInit {
   quotes = [
-    new Quote('Start Early finish Early', 'By Martin Luther', new Date(2018, 9, 14)),
-    new Quote('The mind is the greatest weapon against poverty', 'By marvin Gavin', new Date(2018, 4, 13)),
-    new Quote('Never underestimate the power of Confidence', 'By Lincon Martin', new Date(2018, 5, 19)),
+    new Quote('Start Early finish Early', 'Martin Luther', 'Mark Luke'),
+    new Quote('The mind is the greatest weapon against poverty', 'marvin Gavin', 'John Luther'),
+    new Quote('Never underestimate the power of Confidence', 'Lincon Martin', 'List King'),
   ];
 
   toogleDetails(index) {
@@ -22,6 +22,13 @@ export class QuotesComponent implements OnInit {
       this.quotes.splice(index, 1);
     }
   }
+//   var n = 0;
+//
+// function increment(){
+//
+//   n++;
+//   return n;
+// }
   // addNewGoal(goal) {
   //   let quoteLength: number = this.quotes.length;
   //   quote.completeDate = new Date(goal.completeDate)
