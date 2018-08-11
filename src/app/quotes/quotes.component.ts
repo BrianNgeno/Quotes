@@ -22,6 +22,10 @@ export class QuotesComponent implements OnInit {
       this.quotes.splice(index, 1);
     }
   }
+  addNewQuote(quote) {
+      this.quotes.push(quote);
+
+  }
 //   var n = 0;
 //
 // function increment(){
@@ -29,12 +33,7 @@ export class QuotesComponent implements OnInit {
 //   n++;
 //   return n;
 // }
-  // addNewGoal(goal) {
-  //   let quoteLength: number = this.quotes.length;
-  //   quote.completeDate = new Date(goal.completeDate)
-  //   this.quotes.push(quote)
-  //
-  // }
+
 
   constructor() { }
 

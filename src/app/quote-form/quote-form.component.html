@@ -6,7 +6,7 @@
   <p>Please Fill The Form Below To Include New Quotes To Your Page</p>
   <hr>
   <div class="row">
-    <form (ngSubmit)='submitGoal()' #goalForm='ngForm' id="details">
+    <form (ngSubmit)='submitQuote()' #goalForm='ngForm' id="details">
 
       <div class="form-group">
         <label for="name">Quote</label><br>
@@ -28,7 +28,7 @@
 
       <div class="form-group">
         <label for="name">Publisher</label><br>
-        <input type="text" required class="form-control" id="date" [(ngModel)]="newQuote.publisher" name="publisher" #publisher="ngModel" required>
+        <input type="text" required class="form-control" id="publisher" [(ngModel)]="newQuote.publisher" name="publisher" #publisher="ngModel" required>
         <div [hidden]="publisher.valid || publisher.pristine" class="alert alert-danger">
           <p> Publisher is Required</p>
         </div>

@@ -3,7 +3,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <div class="container-fluid" id="parent">
-<app-quote-form (addquote)="addNewQuote($event)"></app-quote-form>
+<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 <ul>
 <div *ngFor='let quote of quotes; let i=index'>
 <li>{{quote.name}}</li>
