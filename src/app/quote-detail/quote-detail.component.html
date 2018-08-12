@@ -1,13 +1,5 @@
 <p> By:{{quote.description|uppercase}} <br> Publisher:{{quote.publisher}} </p>
 
-<button class="btn btn-success" name="button"><i class="glyphicon glyphicon-thumbs-up" id="up"></i>UpVote</button>
-<button class="btn btn-warning"  name="button"><i class="glyphicon glyphicon-thumbs-down" id="down"></i>DownVote</button>
+<button class="btn btn-success" (click)='upVote()'name="button"><i class="glyphicon glyphicon-thumbs-up" id="up"></i>UpVote</button>
+<button class="btn btn-warning"  (click)='upVote()'name="button"><i class="glyphicon glyphicon-thumbs-down" id="down"></i>DownVote</button>
 <button class="btn btn-danger" (click)='quoteComplete(true)' id="delete"> Delete Quote</button>
-
-<!-- <div ng-app="myApp">
-    <ul ng-controller="TodoCtrl">
-        <li class="list-group-item" ng-repeat="todo in todos">{{todo.text}}
-            <button class="btn btn-default" ng-click="likeIt(todo)">value- {{todo.count || 0}}</button>
-        </li>
-    </ul>
-</div> -->

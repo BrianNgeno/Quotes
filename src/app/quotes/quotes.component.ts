@@ -17,7 +17,7 @@ export class QuotesComponent implements OnInit {
     console.log(this.quotes[index].showDescription);
   }
 
-  completeGoal(isComplete, index) {
+  completeQuote(isComplete, index) {
     if (isComplete) {
       this.quotes.splice(index, 1);
     }
@@ -26,14 +26,6 @@ export class QuotesComponent implements OnInit {
       this.quotes.push(quote);
 
   }
-   // let Count = 0
-//   var n = 0;
-//
-// function increment(){
-//
-//   n++;
-//   return n;
-// }
 
 
   constructor() { }

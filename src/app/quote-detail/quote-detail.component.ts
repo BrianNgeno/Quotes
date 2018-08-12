@@ -13,19 +13,7 @@ export class QuoteDetailComponent implements OnInit {
    this.isComplete.emit(complete);
    console.log('complete');
 }
-// let myApp = angular.module('myApp', []);
-//
-// function TodoCtrl($scope) {
-//     $scope.todos = [{
-//         text: 'todo one'
-//     }, {
-//         text: 'todo two',
-//         done: false
-//     }];
-//     $scope.likeIt = function likeIt(model) {
-//         model.count = model.count + 1 || 1;
-//     };
-// }
+
 constructor() { }
 
   ngOnInit() {
