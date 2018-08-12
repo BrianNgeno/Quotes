@@ -26,6 +26,7 @@ export class QuotesComponent implements OnInit {
       this.quotes.push(quote);
 
   }
+   // let Count = 0
 //   var n = 0;
 //
 // function increment(){
