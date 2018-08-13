@@ -7,9 +7,9 @@ import { Quote } from '../quote';
 })
 export class QuotesComponent implements OnInit {
   quotes = [
-    // new Quote('Start Early finish Early', 'Martin Luther', 'Mark Luke', 2),
-    // new Quote('The mind is the greatest weapon against poverty', 'marvin Gavin', 'John Luther', 4),
-    // new Quote('Never underestimate the power of Confidence', 'Lincon Martin', 'List King', 6),
+    // new Quote(1, 'Start Early finish Early', 'Martin Luther', 'Mark Luke', 2, 7),
+    // new Quote(2, 'The mind is the greatest weapon against poverty', 'marvin Gavin', 'John Luther', 4, 9),
+    // new Quote(3, 'Never underestimate the power of Confidence', 'Lincon Martin', 'List King', 6, 8 ),
   ];
 
   toogleDetails(index) {
@@ -29,6 +29,8 @@ export class QuotesComponent implements OnInit {
 
 
   constructor() { }
+
+
 
   ngOnInit() {
   }
