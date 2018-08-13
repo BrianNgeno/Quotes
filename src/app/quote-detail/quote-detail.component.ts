@@ -15,10 +15,10 @@ export class QuoteDetailComponent implements OnInit {
 }
 
 
-upVote(id) {
+upVote() {
   this.quote.upvote += 1;
 }
-downVote(id) {
+downVote() {
   this.quote.downvote += 1;
 }
 constructor() { }
