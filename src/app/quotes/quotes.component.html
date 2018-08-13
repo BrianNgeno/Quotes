@@ -5,7 +5,7 @@
 <div class="container-fluid" id="parent">
 <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 <ul>
-<div *ngFor='let quote of quotes; let i=index'>
+<div class="jumbotron" *ngFor='let quote of quotes; let i=index'>
 <li>{{quote.name}}</li>
 
 <button class="btn btn-info" (click)='toogleDetails(i)' id="toogle">Show Author and Publisher</button>

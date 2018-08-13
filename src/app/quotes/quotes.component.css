@@ -1,12 +1,27 @@
-#parent{
+#parent {
   text-align: center;
   font-family: 'Righteous', cursive;
-  background-color:#ffe6e6;
+  background-color: #ffe6e6;
 }
-ul{
-list-style: none;
+
+ul {
+  list-style: none;
+  background-image: url(../../assets/jambo.jpg);
+    background-attachment: fixed;
 }
-#toogle{
+
+#toogle {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.jumbotron {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  opacity: 0.8;
+  background-color: #333;
+  color: white;
+
 }
