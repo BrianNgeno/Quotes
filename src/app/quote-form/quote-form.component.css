@@ -1,6 +1,6 @@
 #form{
   background-image: url('../../assets/pic.jpg');
-  background-size: 1400px 750px;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
@@ -9,7 +9,7 @@
   padding-bottom: 40px;
 }
 #details{
-  margin-left: 600px;
+  margin: auto;
   color:white;
   font-family: 'Abril Fatface', cursive;
 }
@@ -25,4 +25,12 @@ h1{
 }
 #description{
   opacity:0.4;
+}
+#one{
+  background-color: black;
+  opacity:0.9;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
