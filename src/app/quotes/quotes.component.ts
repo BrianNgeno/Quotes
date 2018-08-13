@@ -7,9 +7,9 @@ import { Quote } from '../quote';
 })
 export class QuotesComponent implements OnInit {
   quotes = [
-    new Quote('Start Early finish Early', 'Martin Luther', 'Mark Luke'),
-    new Quote('The mind is the greatest weapon against poverty', 'marvin Gavin', 'John Luther'),
-    new Quote('Never underestimate the power of Confidence', 'Lincon Martin', 'List King'),
+    // new Quote('Start Early finish Early', 'Martin Luther', 'Mark Luke', 2),
+    // new Quote('The mind is the greatest weapon against poverty', 'marvin Gavin', 'John Luther', 4),
+    // new Quote('Never underestimate the power of Confidence', 'Lincon Martin', 'List King', 6),
   ];
 
   toogleDetails(index) {

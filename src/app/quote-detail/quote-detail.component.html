@@ -1,5 +1,5 @@
 <p> By:{{quote.description|uppercase}} <br> Publisher:{{quote.publisher}} </p>
 
-<button class="btn btn-success" (click)='upVote()'name="button"><i class="glyphicon glyphicon-thumbs-up" id="up"></i>UpVote</button>
-<button class="btn btn-warning"  (click)='upVote()'name="button"><i class="glyphicon glyphicon-thumbs-down" id="down"></i>DownVote</button>
+<button class="btn btn-success" (click)='upVote(id)'name="button"><i class="glyphicon glyphicon-thumbs-up" id="up"></i>UpVote:{{quote.upvote}}</button>
+<button class="btn btn-warning"  (click)='downVote(id)'name="button"><i class="glyphicon glyphicon-thumbs-down" id="down"></i>DownVote:{{quote.downvote}}</button>
 <button class="btn btn-danger" (click)='quoteComplete(true)' id="delete"> Delete Quote</button>
