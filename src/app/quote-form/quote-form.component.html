@@ -34,7 +34,9 @@
         </div>
       </div>
 
-      <button type="Submit" class="btn btn-success">Add Quote</button>
+      <button type="Submit"  class="btn btn-success" [disabled]="!newQuote.form.valid" (click)="newQuote();newQuote.reset()">Add Quote</button>
+    
+
     </form>
   </div>
 </div>
